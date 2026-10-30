@@ -1,0 +1,8 @@
+services:
+  dashboard:
+    build: .
+    container_name: datacrazy-conversao
+    env_file: .env
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
